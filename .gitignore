@@ -2,4 +2,5 @@
 /Lib/
 /Scripts/
 /itvdn_courses/.vscode/
+/itvdn_courses/.idea/
 pyvenv.cfg
