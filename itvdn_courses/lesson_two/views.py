@@ -1,7 +1,5 @@
-#from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
 def home(request):
     return HttpResponse('Main page!')
 
@@ -19,3 +17,12 @@ def month_arhive(request, year, month):
 
 def day_arhive(request, year, month, day):
     return HttpResponse('Welcome to year - {} month - {} day - {}'.format(year, month, day))
+
+def show_url_param(request, word):
+	return HttpResponse('Welcome to {}'.format(word))
+
+def page(request, num = '1'):
+	if num == '1':
+		return HttpResponse('Welcome to first book page!')
+	else:
+		return HttpResponse('Welcome to My book page number - {}'.format(num)) 
