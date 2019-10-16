@@ -7,7 +7,12 @@
 	<title>TEST</title>
 </head>
 <body>
-	<h1>Тестовый рендер template</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, odit sint, officiis, voluptatem cum debitis ipsam rem doloribus dignissimos velit atque magni enim. Eaque odit sapiente eos culpa quidem provident.</p>
+	<h1>Hello template</h1>
+	<form action="form-hendler/" method="post">
+			{% csrf_token %}
+			login <input type="text">
+			password <input type="password">
+			<input type="submit" value="SUBMIT!">
+	</form>
 </body>
 </html>

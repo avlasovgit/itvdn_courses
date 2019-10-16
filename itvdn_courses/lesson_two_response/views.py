@@ -34,3 +34,9 @@ def render_template(request):
 
 def render_response(request):
 	return render_to_response('main_render.html', {})
+
+def form_hendler(request):
+	if request.POST:
+		return HttpResponse('Request is POST')
+	else:
+		return HttpResponse('Request is GET')
